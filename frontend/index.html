@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="styles.css">
+  <title>Study Log App</title>
+</head>
+<body>
+  <div id="app">
+    <!-- Left Panel: Input Form -->
+    <div class="panel left-panel">
+      <h2>Log Study Session</h2>
+      <form id="studyForm"> <!-- Updated form ID to match JavaScript -->
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" placeholder="Enter subject name" required>
+
+        <label for="duration">Duration (mins):</label>
+        <input type="number" id="duration" placeholder="e.g., 60" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="notes">Notes:</label> <!-- Updated ID to "notes" -->
+        <textarea id="notes" placeholder="Additional notes (optional)"></textarea>
+
+        <button type="submit">Add Study Session</button>
+      </form>
+    </div>
+
+    <!-- Right Panel: Study History -->
+    <div class="panel right-panel">
+      <h2>Study History</h2>
+
+      <!-- Sorting Options -->
+      <div class="sorting">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="duration-asc">Duration: Shortest to Longest</option>
+          <option value="duration-desc">Duration: Longest to Shortest</option>
+          <option value="date-asc">Date: Oldest to Newest</option>
+          <option value="date-desc">Date: Newest to Oldest</option>
+        </select>
+
+        <label for="group">Group by:</label>
+        <select id="group">
+          <option value="none">None</option>
+          <option value="subject">Subject</option>
+          <option value="date">Date</option>
+        </select>
+      </div>
+
+      <!-- Logs Display -->
+      <div id="studyList"></div> <!-- Matches the JS variable "studyList" -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
