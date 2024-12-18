@@ -7,7 +7,7 @@ function addStudySession(event) {
     event.preventDefault();
 
     const subject = document.getElementById('subject').value;
-    const date = document.getElementById('date').value;
+    const date = document.getElementById('date').value; 
     const duration = document.getElementById('duration').value;
     const notes = document.getElementById('notes').value;
 

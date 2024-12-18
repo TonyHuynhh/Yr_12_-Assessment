@@ -5,6 +5,7 @@
     "display": "standalone",
     "background_color": "#f0f0f0",
     "theme_color": "#4CAF50",
+    "description": "In this app, you can mamage and track your study log everyday and for every subject",
     "icons": [
         {
             "src": "Icons/icon1.jpeg",
@@ -19,13 +20,13 @@
     ],
     "screenshots": [
         {
-            "src": "Icons/desktop.png",
+            "src": "Icons/desktop.jpeg",
             "sizes": "1280x720",
             "type": "image/png",
             "form_factor": "wide"
         },
         {
-            "src": "Icons/mobile.png",
+            "src": "Icons/mobile.jpeg",
             "sizes": "720x1280",
             "type": "image/png",
             "form_factor": "narrow"
