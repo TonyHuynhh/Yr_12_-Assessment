@@ -3,8 +3,7 @@ const urlsToCache = [
     '/frontend/',
     '/frontend/index.html',
     '/frontend/styles.css',
-    '/frontend/app.js',
-    '/manifest.json'
+    '/frontend/app.js'
     // Add additional assets if needed
 ];
 
